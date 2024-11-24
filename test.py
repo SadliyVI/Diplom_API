@@ -20,21 +20,23 @@ my_list = [(457239033, {'likes': 10, 'date': 1732181155, 'height': 765,
             'width': 510, 'size_type': 'r'})]
 
 
-def get_equal_likes_index(data_list, number):
-    if data_list and number != 0:
-        id_list = []
-        for i in range(number-1):
-            j=i
-            while j != number-1:
-                if data_list[i][1]['likes'] == data_list[j+1][1]['likes']:
-                    if data_list[i][0] not in index_list:
-                        index_list.append(data_list[i][0])
-                    if data_list[j+1][0] not in index_list:
-                        index_list.append(data_list[j+1][0])
-                j +=1
-
-    return id_list
 
 
-list = get_equal_likes_index(my_list, 7)
-print(list)
+
+# list = get_equal_likes_id(my_list, 10)
+# new_list = get_filename(my_list, 10)
+# print(new_list)
+
+# url = "https://sun9-53.userapi.com/s/v1/ig2/hWi7SQwHhOIcQ7Zee1oyA7e0gTBNinkBV1tezNt9B3qDG8yYVhbZOrN3tzElDJ1ghPoaPC_K5xwAwZjR3yqJEGCu.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1620,1280x1920,1365x2048&from=bu&cs=510x765"
+# index = url.index('?')
+# str = url.rpartition('?')[0].rpartition('.')[2]
+# print(str)
+
+
+# import datetime
+#
+# # def get_date(publication_date):
+# #     return datetime.datetime.fromtimestamp(publication_date).strftime('%Y-%m-%d')
+#
+# ts = int('1284101485')
+# print(get_date(1284101485))
